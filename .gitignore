@@ -1,0 +1,22 @@
+# OBS / videos
+recordings/*.mp4
+recordings/*.mkv
+recordings/*.mov
+exports/*.mp4
+exports/*.mkv
+exports/*.mov
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code local state
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.sixth/
+ln-ia-obs-studio/
+
+# Temporary files
+*.tmp
+*.log
