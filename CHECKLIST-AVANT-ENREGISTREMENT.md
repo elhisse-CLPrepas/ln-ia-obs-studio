@@ -1,24 +1,24 @@
 # Checklist avant enregistrement
 
-Avant de lancer OBS, verifier chaque point.
+Avant de lancer OBS, vérifier chaque point.
 
-- [ ] Micro teste.
-- [ ] Webcam cadree.
+- [ ] Micro testé.
+- [ ] Webcam cadrée.
 - [ ] Lumiere correcte.
-- [ ] Fenetre a enregistrer ouverte.
-- [ ] Notifications coupees.
-- [ ] Logo LN-IA affiche.
+- [ ] Fenêtre à enregistrer ouverte.
+- [ ] Notifications coupées.
+- [ ] Logo LN-IA affiché.
 - [ ] Espace disque suffisant.
-- [ ] Test audio realise.
+- [ ] Test audio réalisé.
 - [ ] Fichier de sortie verifie.
 
 ## Verification rapide
 
-Faire un test de 30 secondes avant toute video importante.
+Faire un test de 30 secondes avant toute vidéo importante.
 
 Relire le test et confirmer :
 
 - le son est clair ;
-- l'ecran est lisible ;
+- l’écran est lisible ;
 - la webcam ne masque pas le contenu ;
 - le fichier est bien enregistre dans `recordings/`.

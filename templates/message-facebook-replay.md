@@ -1,11 +1,11 @@
 # Message Facebook replay
 
-Replay disponible : **[theme du replay]**
+Replay disponible : **[thème du replay]**
 
-Dans cette session LN-IA, nous reprenons les points essentiels et les etapes pratiques pour progresser pas a pas.
+Dans cette session LN-IA, nous reprenons les points essentiels et les étapes pratiques pour progresser pas à pas.
 
 Le replay est accessible ici :
 
 [lien du replay]
 
-N'hesitez pas a le revoir et a partager vos questions en commentaire.
+N’hésitez pas a le revoir et à partager vos questions en commentaire.

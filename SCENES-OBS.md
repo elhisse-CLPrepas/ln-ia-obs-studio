@@ -1,99 +1,99 @@
-# Scenes OBS pour atelier LN-IA
+# Scènes OBS pour atelier LN-IA
 
-Objectif : configurer 4 scenes simples pour enregistrer une video pedagogique avec ecran PC, webcam, micro, logo LN-IA et ecran d'attente.
+Objectif : configurer 4 scènes simples pour enregistrer une vidéo pédagogique avec écran PC, webcam, micro, logo LN-IA et écran d’attente.
 
-## Reglages communs
+## Réglages communs
 
-Avant de creer les scenes :
+Avant de créer les scènes :
 
-- resolution : `1920 x 1080` ;
+- résolution : `1920 x 1080` ;
 - FPS : `30` ;
 - micro : actif dans le mixeur audio ;
-- logo : `assets/logo-ln-ia.png` ;
-- fond d'attente : `assets/fond-attente.png` ;
-- dossier d'enregistrement : `recordings/`.
+- logo : `assets/logo-LN-IA.png` ;
+- fond d’attente : `assets/fond-attente.png` ;
+- dossier d’enregistrement : `recordings/`.
 
-## Scene 1 : Ecran + webcam
+## Scène 1 : Écran + webcam
 
-Usage : tutoriel general, navigation web, demonstration d'un outil.
+Usage : tutoriel général, navigation web, démonstration d’un outil.
 
-Sources a ajouter dans OBS :
+Sources à ajouter dans OBS :
 
-- `Capture d'ecran` : ecran principal ;
-- `Peripherique de capture video` : webcam ;
-- `Capture d'entree audio` : microphone ;
+- `Capture d'écran` : écran principal ;
+- `Périphérique de capture vidéo` : webcam ;
+- `Capture d’entrée audio` : microphone ;
 - `Image` : logo LN-IA.
 
-Placement conseille :
+Placement conseillé :
 
-- ecran en plein cadre ;
-- webcam en bas a droite ;
-- logo en haut a gauche ;
+- écran en plein cadre ;
+- webcam en bas à droite ;
+- logo en haut à gauche ;
 - micro visible dans le mixeur audio.
 
-## Scene 2 : VS Code + webcam
+## Scène 2 : VS Code + webcam
 
-Usage : formation technique, demonstration IA, script, automatisation.
+Usage : formation technique, démonstration IA, script, automatisation.
 
-Sources a ajouter dans OBS :
+Sources à ajouter dans OBS :
 
-- `Capture de fenetre` : Visual Studio Code ;
-- `Peripherique de capture video` : webcam ;
-- `Capture d'entree audio` : microphone ;
+- `Capture de fenêtre` : Visual Studio Code ;
+- `Périphérique de capture vidéo` : webcam ;
+- `Capture d’entrée audio` : microphone ;
 - `Image` : logo LN-IA.
 
-Placement conseille :
+Placement conseillé :
 
 - VS Code en grand ;
 - zoom VS Code suffisant pour lire le code ;
-- webcam en bas a droite ou en haut a droite ;
+- webcam en bas à droite ou en haut à droite ;
 - logo dans un coin qui ne masque pas le code.
 
-## Scene 3 : Presentation plein ecran
+## Scène 3 : Présentation plein écran
 
-Usage : diaporama, support PDF, Canva, PowerPoint, introduction structuree.
+Usage : diaporama, support PDF, Canva, PowerPoint, introduction structurée.
 
-Sources a ajouter dans OBS :
+Sources à ajouter dans OBS :
 
-- `Capture de fenetre` : PowerPoint, Canva, PDF ou navigateur ;
-- `Capture d'entree audio` : microphone ;
+- `Capture de fenêtre` : PowerPoint, Canva, PDF ou navigateur ;
+- `Capture d’entrée audio` : microphone ;
 - `Image` : logo LN-IA.
 
 Option :
 
 - ajouter la webcam seulement si elle ne masque pas le contenu.
 
-Placement conseille :
+Placement conseillé :
 
-- presentation en plein cadre ;
+- présentation en plein cadre ;
 - logo discret ;
-- webcam desactivee si la lecture est prioritaire.
+- webcam désactivée si la lecture est prioritaire.
 
-## Scene 4 : Pause / ecran d'attente
+## Scène 4 : Pause / écran d’attente
 
-Usage : attente avant demarrage, pause courte, transition entre deux parties.
+Usage : attente avant démarrage, pause courte, transition entre deux parties.
 
-Sources a ajouter dans OBS :
+Sources à ajouter dans OBS :
 
 - `Image` : `assets/fond-attente.png` ;
-- `Image` : `assets/logo-ln-ia.png` ;
+- `Image` : `assets/logo-LN-IA.png` ;
 - `Texte` : `Pause - reprise dans quelques minutes`.
 
-Placement conseille :
+Placement conseillé :
 
 - fond en plein cadre ;
 - logo visible ;
-- texte centre ou legerement au-dessus du centre ;
+- texte centré ou légèrement au-dessus du centre ;
 - aucun contenu confidentiel.
 
-## Test rapide des scenes
+## Test rapide des scènes
 
-Avant l'enregistrement :
+Avant l’enregistrement :
 
-- [ ] passer sur chaque scene ;
-- [ ] verifier que la source principale est visible ;
-- [ ] parler dans le micro et verifier le niveau audio ;
-- [ ] verifier la webcam sur les scenes 1 et 2 ;
-- [ ] verifier le logo LN-IA ;
+- [ ] passer sur chaque scène ;
+- [ ] vérifier que la source principale est visible ;
+- [ ] parler dans le micro et vérifier le niveau audio ;
+- [ ] vérifier la webcam sur les scènes 1 et 2 ;
+- [ ] vérifier le logo LN-IA ;
 - [ ] lancer un test de 30 secondes ;
 - [ ] relire le fichier dans `recordings/`.

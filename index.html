@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LN-IA OBS Studio - Webinaire et atelier pédagogique</title>
+  <meta name="description" content="Kit opérationnel LN-IA pour configurer OBS Studio, enregistrer une vidéo pédagogique et organiser un replay exploitable.">
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #5d6d7e;
+      --line: #d7dee7;
+      --paper: #f7f9fb;
+      --white: #ffffff;
+      --accent: #00a4b3;
+      --accent-dark: #087987;
+      --mark: #f0c35b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+
+    header {
+      background: var(--ink);
+      color: var(--white);
+      padding: 44px 24px 36px;
+      border-bottom: 8px solid var(--accent);
+    }
+
+    .wrap {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      padding: 6px;
+      border: 2px solid rgba(255, 255, 255, .35);
+      background: rgba(255, 255, 255, .08);
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 20px 0 0;
+      color: #dce7ef;
+      font-size: 19px;
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px 16px;
+    }
+
+    nav a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 8px 10px;
+    }
+
+    main {
+      padding: 28px 0 48px;
+    }
+
+    section {
+      margin: 0 0 28px;
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 18px;
+    }
+
+    ul,
+    ol {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fbfcfd;
+    }
+
+    .item p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 4px 8px;
+      color: var(--ink);
+      background: var(--mark);
+      font-weight: 700;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    code {
+      padding: 2px 5px;
+      background: #eef3f7;
+      border: 1px solid #dce5ed;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: .95em;
+    }
+
+    pre {
+      overflow-x: auto;
+      margin: 12px 0 0;
+      padding: 14px;
+      background: #101820;
+      color: #f5f7fa;
+      border-radius: 8px;
+    }
+
+    pre code {
+      padding: 0;
+      background: transparent;
+      border: 0;
+      color: inherit;
+    }
+
+    .callout {
+      border-left: 5px solid var(--accent);
+      background: #edfafd;
+    }
+
+    footer {
+      padding: 24px;
+      color: var(--muted);
+      text-align: center;
+      border-top: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    @média (max-width: 760px) {
+      header {
+        padding-top: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <img class="logo" src="assets/logo-LN-IA.png" alt="Logo LN-IA">
+        <div>
+          <strong>LAB-NUMÉRIQUE-IA</strong><br>
+          Kit OBS Studio v0.1.0
+        </div>
+      </div>
+      <h1>Webinaire et atelier pédagogique avec OBS Studio</h1>
+      <p class="lead">Un dossier source pour configurer OBS, enregistrer une vidéo claire avec écran PC, webcam, micro, logo LN-IA et organiser un replay exploitable.</p>
+    </div>
+  </header>
+
+  <nav aria-label="Navigation principale">
+    <div class="wrap">
+      <a href="#objectif">Objectif</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#scènes">Scènes OBS</a>
+      <a href="#vidéo-test">Vidéo test</a>
+      <a href="#replay">Replay</a>
+      <a href="#fichiers">Fichiers</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="objectif" class="callout">
+      <span class="tag">Principe</span>
+      <h2>Transformer la pratique en méthode transmissible</h2>
+      <pre><code>OBS enregistre.
+VS Code organise.
+Codex structure.
+Git versionne.
+LN-IA transforme la pratique en méthode transmissible.</code></pre>
+    </section>
+
+    <section id="atelier">
+      <h2>Deroule de l’atelier</h2>
+      <ol>
+        <li>Installer et ouvrir OBS Studio.</li>
+        <li>Configurer la résolution en <code>1920 x 1080</code>.</li>
+        <li>Créer les 4 scènes OBS de l’atelier.</li>
+        <li>Ajouter le micro, la webcam et le logo LN-IA.</li>
+        <li>Réaliser une vidéo test de 2 minutes.</li>
+        <li>Vérifier la qualité audio, vidéo et fichier.</li>
+        <li>Organiser le replay dans <code>exports/</code>.</li>
+      </ol>
+    </section>
+
+    <section id="scènes">
+      <h2>Scènes OBS à configurer</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>1. Écran + webcam</h3>
+          <p>Capture d'écran, webcam, micro et logo LN-IA pour une démonstration générale.</p>
+        </article>
+        <article class="item">
+          <h3>2. VS Code + webcam</h3>
+          <p>Capture de fenêtre VS Code, webcam, micro et logo pour les formations techniques.</p>
+        </article>
+        <article class="item">
+          <h3>3. Présentation plein écran</h3>
+          <p>Support PowerPoint, PDF, Canva ou navigateur en plein cadre avec micro et logo.</p>
+        </article>
+        <article class="item">
+          <h3>4. Pause / écran d’attente</h3>
+          <p>Fond d’attente sobre avec logo LN-IA et message de pause.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="vidéo-test">
+      <h2>Vidéo test attendue</h2>
+      <ul>
+        <li>Fichier : <code>recordings/test-obs-ln-ia-v0.1.0.mp4</code></li>
+        <li>Durée : 2 minutes</li>
+        <li>Scène conseillée : <code>Écran + webcam</code></li>
+      </ul>
+      <h3>Introduction orale</h3>
+      <pre><code>Bienvenue dans l’atelier OBS LN-IA.
+Objectif : enregistrer une vidéo pédagogique claire avec écran, voix et présence humaine.</code></pre>
+    </section>
+
+    <section id="replay">
+      <h2>Replay exploitable</h2>
+      <p>Après l’enregistrement, vérifier le fichier, renommer proprement la vidéo et préparer la diffusion.</p>
+      <ul>
+        <li>Vidéo brute : <code>recordings/</code></li>
+        <li>Vidéo finale : <code>exports/</code></li>
+        <li>Assets : <code>assets/logo-LN-IA.png</code> et <code>assets/fond-attente.png</code></li>
+        <li>Messages : <code>templates/message-whatsapp-replay.md</code> et <code>templates/message-facebook-replay.md</code></li>
+      </ul>
+    </section>
+
+    <section id="fichiers">
+      <h2>Fichiers du dépôt</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>Guides</h3>
+          <p><code>GUIDE-CONFIGURATION-OBS.md</code>, <code>SCENES-OBS.md</code>, <code>GUIDE-ENREGISTRER-VIDEO-PC.md</code>, <code>GUIDE-REPLAY.md</code></p>
+        </article>
+        <article class="item">
+          <h3>Checklists</h3>
+          <p><code>CHECKLIST-AVANT-ENREGISTREMENT.md</code>, <code>CHECKLIST-APRES-ENREGISTREMENT.md</code>, <code>CHECKLIST-VIDEO-TEST-OBS.md</code></p>
+        </article>
+        <article class="item">
+          <h3>Prompts et scripts</h3>
+          <p><code>prompts/</code> et <code>templates/</code> pour préparer les scripts, descriptions et messages.</p>
+        </article>
+        <article class="item">
+          <h3>Release</h3>
+          <p><code>release/notes-v0.1.0.md</code> documente la version initiale du kit.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    LN-IA OBS Studio v0.1.0 - Dossier source pour webinaire et atelier pédagogique.
+  </footer>
+</body>
+</html>

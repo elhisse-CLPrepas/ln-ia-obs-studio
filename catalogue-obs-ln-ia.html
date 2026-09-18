@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogue OBS LN-IA</title>
+  <meta name="description" content="Catalogue rapide LN-IA pour configurer OBS Studio dans un atelier pédagogique ou un webinaire.">
+  <style>
+    :root {
+      --ink: #18222f;
+      --muted: #637282;
+      --soft: #eef4f7;
+      --line: #cfdae4;
+      --paper: #f5f7fa;
+      --white: #ffffff;
+      --accent: #00a4b3;
+      --accent-dark: #067481;
+      --gold: #f0c35b;
+      --green: #2f8f6b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent-dark);
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      color: var(--white);
+      background: linear-gradient(135deg, #111a24 0%, #1b2b36 62%, #0b6c77 100%);
+      border-bottom: 8px solid var(--accent);
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) 360px;
+      gap: 28px;
+      align-items: end;
+      min-height: 520px;
+      padding: 40px 0 34px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      padding: 6px;
+      border: 2px solid rgba(255,255,255,.38);
+      background: rgba(255,255,255,.08);
+    }
+
+    .kicker {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      color: #18222f;
+      background: var(--gold);
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(36px, 5.4vw, 64px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: #dce7ef;
+      font-size: 19px;
+    }
+
+    .cover-card {
+      padding: 22px;
+      color: var(--ink);
+      background: rgba(255,255,255,.94);
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 8px;
+    }
+
+    .cover-card h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+
+    .meta {
+      display: grid;
+      gap: 10px;
+    }
+
+    .meta div {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dce5ed;
+    }
+
+    .meta span {
+      color: var(--muted);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+
+    nav .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px 0;
+    }
+
+    nav a {
+      padding: 8px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      background: var(--soft);
+    }
+
+    main {
+      padding: 30px 0 54px;
+    }
+
+    section {
+      margin-bottom: 24px;
+      padding: 26px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 27px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    ul,
+    ol {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    code {
+      padding: 2px 5px;
+      background: #edf3f7;
+      border: 1px solid #d8e3ec;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: .95em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      min-height: 100%;
+      padding: 18px;
+      background: #fbfcfd;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .number {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 12px;
+      color: var(--white);
+      background: var(--accent-dark);
+      border-radius: 50%;
+      font-weight: 700;
+    }
+
+    .callout {
+      border-left: 6px solid var(--accent);
+      background: #eefafd;
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 18px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      position: relative;
+      margin: 0;
+      padding-left: 28px;
+    }
+
+    .checklist li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 17px;
+      height: 17px;
+      border: 2px solid var(--green);
+      border-radius: 4px;
+    }
+
+    .script {
+      padding: 16px;
+      color: #f7fbff;
+      background: #101820;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: Consolas, Monaco, monospace;
+      white-space: pre-wrap;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .table th,
+    .table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    .table th {
+      color: var(--white);
+      background: var(--accent-dark);
+    }
+
+    .table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    footer {
+      padding: 24px;
+      color: var(--muted);
+      text-align: center;
+      background: var(--white);
+      border-top: 1px solid var(--line);
+    }
+
+    @média print {
+      nav {
+        display: none;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .hero-inner {
+        min-height: auto;
+        padding: 28px 0;
+      }
+
+      section,
+      .card {
+        break-inside: avoid;
+      }
+    }
+
+    @média (max-width: 860px) {
+      .hero-inner,
+      .grid,
+      .three,
+      .checklist {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-inner {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="brand">
+          <img class="logo" src="assets/logo-LN-IA.png" alt="Logo LN-IA">
+          <div>
+            <strong>LAB-NUMÉRIQUE-IA</strong><br>
+            Catalogue OBS Studio
+          </div>
+        </div>
+        <span class="kicker">Webinaire + atelier pédagogique</span>
+        <h1>Configurer OBS pour produire une vidéo pédagogique claire</h1>
+        <p class="lead">Un catalogue rapide pour passer de la préparation technique à un replay exploitable : écran PC, webcam, micro, logo LN-IA et contrôle qualité.</p>
+      </div>
+
+      <aside class="cover-card" aria-label="Informations du catalogue">
+        <h2>Fiche atelier</h2>
+        <div class="meta">
+          <div><span>Version</span><strong>v0.1.0</strong></div>
+          <div><span>Durée test</span><strong>2 minutes</strong></div>
+          <div><span>Format vidéo</span><strong>MP4 ou MKV</strong></div>
+          <div><span>Résolution</span><strong>1920 x 1080</strong></div>
+          <div><span>Public</span><strong>Formateurs LN-IA</strong></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <nav aria-label="Navigation catalogue">
+    <div class="wrap">
+      <a href="#objectif">Objectif</a>
+      <a href="#configuration">Configuration</a>
+      <a href="#sources">Sources</a>
+      <a href="#scènes">Scènes</a>
+      <a href="#test">Vidéo test</a>
+      <a href="#replay">Replay</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="objectif" class="callout">
+      <h2>Résultat attendu</h2>
+      <p>A la fin de l’atelier, le poste est prêt pour enregistrer une vidéo pédagogique propre et reproductible.</p>
+      <div class="grid three">
+        <article class="card">
+          <h3>Production</h3>
+          <p>Une scène principale OBS avec écran, présence humaine, micro et logo LN-IA.</p>
+        </article>
+        <article class="card">
+          <h3>Méthode</h3>
+          <p>Des checklists simples pour préparer, enregistrer et valider la vidéo.</p>
+        </article>
+        <article class="card">
+          <h3>Replay</h3>
+          <p>Un fichier final range dans <code>exports/</code> et prêt pour la diffusion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="configuration">
+      <h2>Configuration rapide OBS</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="number">1</span>
+          <h3>Installer et ouvrir OBS</h3>
+          <p>Installer OBS Studio pour Windows 10 ou Windows 11, puis ouvrir l'application avec les options par défaut.</p>
+        </article>
+        <article class="card">
+          <span class="number">2</span>
+          <h3>Régler la vidéo</h3>
+          <p>Dans <code>Paramètres &gt; Vidéo</code>, choisir <code>1920 x 1080</code> en base et en sortie, puis <code>30 FPS</code>.</p>
+        </article>
+        <article class="card">
+          <span class="number">3</span>
+          <h3>Régler la sortie</h3>
+          <p>Dans <code>Paramètres &gt; Sortie</code>, choisir <code>recordings/</code>. Utiliser <code>MKV</code> pour la sécurité ou <code>MP4</code> pour le partage direct.</p>
+        </article>
+        <article class="card">
+          <span class="number">4</span>
+          <h3>Tester 30 secondes</h3>
+          <p>Lancer un court enregistrement, parler, montrer une action à l’écran, puis relire la vidéo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sources">
+      <h2>Sources à ajouter</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Élément</th>
+            <th>Source OBS</th>
+            <th>Conseil LN-IA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Écran PC</td>
+            <td><code>Capture d'écran</code> ou <code>Capture de fenêtre</code></td>
+            <td>Vérifier que les informations sensibles ne sont pas visibles.</td>
+          </tr>
+          <tr>
+            <td>Webcam ou photo</td>
+            <td><code>Périphérique de capture vidéo</code> ou <code>Image</code></td>
+            <td>Placer en bas à droite, sans cacher le contenu important.</td>
+          </tr>
+          <tr>
+            <td>Microphone</td>
+            <td><code>Capture d’entrée audio</code></td>
+            <td>Parler normalement et éviter le niveau rouge dans le mixeur.</td>
+          </tr>
+          <tr>
+            <td>Logo LN-IA</td>
+            <td><code>Image</code></td>
+            <td>Utiliser <code>assets/logo-LN-IA.png</code> en haut à gauche.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="scènes">
+      <h2>Catalogue des 4 scènes OBS</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="number">1</span>
+          <h3>Écran + webcam</h3>
+          <p>Scène principale pour tutoriel, navigation web et démonstration d'outil.</p>
+        </article>
+        <article class="card">
+          <span class="number">2</span>
+          <h3>VS Code + webcam</h3>
+          <p>Scène technique pour scripts, automatisation, IA et explications dans l'editeur.</p>
+        </article>
+        <article class="card">
+          <span class="number">3</span>
+          <h3>Présentation plein écran</h3>
+          <p>Scène pour PowerPoint, PDF, Canva ou support de cours en plein cadre.</p>
+        </article>
+        <article class="card">
+          <span class="number">4</span>
+          <h3>Pause / écran d’attente</h3>
+          <p>Scène de transition avec <code>assets/fond-attente.png</code>, logo et message de pause.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Checklist avant enregistrement</h2>
+      <ul class="checklist">
+        <li>Micro testé et audible.</li>
+        <li>Webcam cadrée ou photo visible.</li>
+        <li>Lumiere correcte.</li>
+        <li>Fenêtre à enregistrer ouverte.</li>
+        <li>Notifications coupées.</li>
+        <li>Logo LN-IA affiché.</li>
+        <li>Espace disque suffisant.</li>
+        <li>Dossier de sortie verifie.</li>
+      </ul>
+    </section>
+
+    <section id="test">
+      <h2>Vidéo test v0.1.0</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Fichier attendu</h3>
+          <p><code>recordings/test-obs-ln-ia-v0.1.0.mp4</code></p>
+          <p>Durée cible : 2 minutes.</p>
+        </article>
+        <article class="card">
+          <h3>Introduction orale</h3>
+          <div class="script">Bienvenue dans l’atelier OBS LN-IA.
+Objectif : enregistrer une vidéo pédagogique claire avec écran, voix et présence humaine.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="replay">
+      <h2>Replay exploitable</h2>
+      <ol>
+        <li>Relire la vidéo test ou le replay complet.</li>
+        <li>Vérifier le son, l’image, le logo et la lisibilité.</li>
+        <li>Renommer le fichier avec une convention claire.</li>
+        <li>Conserver la vidéo brute dans <code>recordings/</code>.</li>
+        <li>Placer la version finale dans <code>exports/</code>.</li>
+        <li>Préparer un message de partage WhatsApp, Facebook ou LinkedIn.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    Catalogue OBS LN-IA v0.1.0 - Webinaire et atelier pédagogique.
+  </footer>
+</body>
+</html>

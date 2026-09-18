@@ -20,3 +20,4 @@ ln-ia-obs-studio/
 # Temporary files
 *.tmp
 *.log
+~$*.docx

@@ -1,40 +1,40 @@
 # Livrables LN-IA OBS v0.1.0
 
-Objectif : valider un atelier pratique OBS avec un dossier VS Code propre, une scene OBS configuree, une video test et une note de release.
+Objectif : valider un atelier pratique OBS avec un dossier VS Code propre, une scène OBS configurée, une vidéo test et une note de release.
 
 ## 1. Dossier VS Code propre
 
-Etat : pret.
+État : prêt.
 
-Elements presents :
+Éléments présents :
 
-- guides Markdown a la racine ;
+- guides Markdown à la racine ;
 - dossiers `assets/`, `prompts/`, `templates/`, `recordings/`, `exports/`, `release/` ;
 - configuration VS Code dans `.vscode/` ;
-- regles Git dans `.gitignore` ;
-- dossiers video conserves avec `.gitkeep`.
+- règles Git dans `.gitignore` ;
+- dossiers vidéo conservés avec `.gitkeep`.
 
-## 2. Scene OBS configuree
+## 2. Scène OBS configurée
 
-Scene a creer dans OBS : `Ecran + webcam`.
+Scène à créer dans OBS : `Écran + webcam`.
 
 Sources :
 
-- `Capture d'ecran` : ecran PC ;
-- `Peripherique de capture video` : webcam ou photo en direct ;
-- `Capture d'entree audio` : micro ;
-- `Image` : `assets/logo-ln-ia.png`.
+- `Capture d'écran` : écran PC ;
+- `Périphérique de capture vidéo` : webcam ou photo en direct ;
+- `Capture d’entrée audio` : micro ;
+- `Image` : `assets/logo-LN-IA.png`.
 
 Placement :
 
-- ecran en plein cadre ;
-- webcam en bas a droite ;
-- logo LN-IA en haut a gauche ;
+- écran en plein cadre ;
+- webcam en bas à droite ;
+- logo LN-IA en haut à gauche ;
 - micro visible dans le mixeur audio.
 
-Reference : `SCENES-OBS.md`.
+Référence : `SCENES-OBS.md`.
 
-## 3. Video test enregistree
+## 3. Vidéo test enregistrée
 
 Fichier attendu :
 
@@ -42,20 +42,20 @@ Fichier attendu :
 recordings/test-obs-ln-ia-v0.1.0.mp4
 ```
 
-Duree cible : 2 minutes.
+Durée cible : 2 minutes.
 
 Introduction orale :
 
 ```text
-Bienvenue dans l'atelier OBS LN-IA.
-Objectif : enregistrer une video pedagogique claire avec ecran, voix et presence humaine.
+Bienvenue dans l’atelier OBS LN-IA.
+Objectif : enregistrer une vidéo pédagogique claire avec écran, voix et présence humaine.
 ```
 
 Validation : utiliser `CHECKLIST-VIDEO-TEST-OBS.md`.
 
 ## 4. Note de release
 
-Etat : prete.
+État : prête.
 
 Fichier :
 

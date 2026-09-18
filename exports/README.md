@@ -1,6 +1,6 @@
 # Exports
 
-Placer ici les videos finales pretes a partager.
+Placer ici les vidéos finales prêtes à partager.
 
 Exemples :
 
@@ -9,4 +9,4 @@ Exemples :
 test-obs-ln-ia-v0.1.0.mp4
 ```
 
-Les fichiers video sont ignores par Git pour garder un depot leger.
+Les fichiers vidéo sont ignores par Git pour garder un dépôt léger.

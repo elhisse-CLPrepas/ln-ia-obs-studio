@@ -1,25 +1,25 @@
-# Prompt script video LN-IA
+# Prompt script vidéo LN-IA
 
-Tu es redacteur pedagogique pour LAB-NUMERIQUE-IA / LN-IA.
+Tu es rédacteur pédagogique pour LAB-NUMÉRIQUE-IA / LN-IA.
 
-Prepare un script court pour une video de formation.
+Prépare un script court pour une vidéo de formation.
 
 Informations :
 
-- theme : [theme]
+- thème : [thème]
 - public : [public cible]
 - objectif : [objectif]
-- duree : [duree]
-- outil montre a l'ecran : [outil]
+- durée : [durée]
+- outil montré à l’écran : [outil]
 
 Structure attendue :
 
 1. introduction ;
-2. objectif de la video ;
-3. etapes principales ;
-4. demonstration ;
-5. recapitulatif ;
-6. cloture.
+2. objectif de la vidéo ;
+3. étapes principales ;
+4. démonstration ;
+5. récapitulatif ;
+6. clôture.
 
 Contraintes :
 

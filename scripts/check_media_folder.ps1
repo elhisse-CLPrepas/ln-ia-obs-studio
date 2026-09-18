@@ -11,12 +11,12 @@ foreach ($Folder in $Folders) {
 
     if (-not (Test-Path $Path)) {
         New-Item -ItemType Directory -Path $Path | Out-Null
-        Write-Host "Dossier cree : $Folder"
+        Write-Host "Dossier créé : $Folder"
     }
     else {
-        Write-Host "Dossier deja present : $Folder"
+        Write-Host "Dossier déjà présent : $Folder"
     }
 }
 
 Write-Host ""
-Write-Host "Preparation terminee. Le dossier LN-IA OBS Studio est pret."
+Write-Host "Préparation terminée. Le dossier LN-IA OBS Studio est prêt."

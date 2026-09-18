@@ -4,9 +4,9 @@ Bonjour,
 
 Le replay LN-IA est disponible.
 
-Theme : **[theme du replay]**
+Thème : **[thème du replay]**
 
-Dans cette video, vous pouvez revoir les etapes principales et reprendre la demonstration a votre rythme.
+Dans cette vidéo, vous pouvez revoir les étapes principales et reprendre la démonstration a votre rythme.
 
 Lien : [lien du replay]
 

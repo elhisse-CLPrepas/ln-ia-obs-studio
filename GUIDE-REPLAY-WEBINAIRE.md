@@ -1,6 +1,6 @@
 # Guide de publication du replay webinaire
 
-Ce guide aide a organiser et publier un replay LN-IA apres l'enregistrement.
+Ce guide aide à organiser et publier un replay LN-IA après l’enregistrement.
 
 ## 1. Nom du fichier
 
@@ -13,48 +13,48 @@ AAAA-MM-JJ_LN-IA_nom-webinaire_v01.mp4
 Exemple :
 
 ```text
-2026-05-17_LN-IA_creer-une-video-avec-obs_v01.mp4
+2026-05-17_LN-IA_créer-une-vidéo-avec-obs_v01.mp4
 ```
 
 ## 2. Dossier de stockage
 
-- Video brute : `recordings/`
-- Video finale : `exports/`
+- Vidéo brute : `recordings/`
+- Vidéo finale : `exports/`
 - Miniature : `assets/`
-- Notes de publication : `release/` ou document dedie au webinaire
+- Notes de publication : `release/` ou document dédié au webinaire
 
 ## 3. Description courte
 
-La description doit repondre a trois questions :
+La description doit répondre à trois questions :
 
 - Quel est le sujet ?
-- Pour qui est la video ?
-- Quel resultat l'apprenant obtient-il ?
+- Pour qui est la vidéo ?
+- Quel résultat l’apprenant obtient-il ?
 
-Modele :
+Modèle :
 
 ```text
-Dans ce replay LN-IA, nous montrons comment configurer OBS Studio pour enregistrer une video de formation claire avec ecran, webcam, micro et logo.
+Dans ce replay LN-IA, nous montrons comment configurer OBS Studio pour enregistrer une vidéo de formation claire avec écran, webcam, micro et logo.
 ```
 
 ## 4. Miniature
 
-Preparer une miniature sobre avec :
+Préparer une miniature sobre avec :
 
 - titre court ;
 - logo LN-IA ;
 - visuel lisible ;
 - contraste suffisant ;
-- format 16:9 recommande.
+- format 16:9 recommandé.
 
 ## 5. Lien de partage
 
-Verifier avant diffusion :
+Vérifier avant diffusion :
 
 - le lien fonctionne ;
-- les droits d'acces sont corrects ;
-- la video peut etre lue sur mobile ;
-- le titre est comprehensible.
+- les droits d’accès sont corrects ;
+- la vidéo peut être lue sur mobile ;
+- le titre est compréhensible.
 
 ## 6. Messages de diffusion
 
@@ -62,7 +62,7 @@ Verifier avant diffusion :
 
 ```text
 Bonjour, le replay du webinaire LN-IA est disponible.
-Theme : [theme du webinaire]
+Thème : [thème du webinaire]
 Lien : [lien]
 Bonne consultation.
 ```
@@ -70,9 +70,9 @@ Bonne consultation.
 ### Facebook
 
 ```text
-Replay disponible : [theme du webinaire]
+Replay disponible : [thème du webinaire]
 
-Dans cette session LN-IA, nous partageons une methode simple pour progresser pas a pas.
+Dans cette session LN-IA, nous partageons une méthode simple pour progresser pas à pas.
 
 Lien : [lien]
 ```
@@ -82,8 +82,8 @@ Lien : [lien]
 ```text
 Le replay du webinaire LN-IA est disponible.
 
-Sujet : [theme du webinaire]
-Objectif : aider les participants a passer de la theorie a une pratique claire et reproductible.
+Sujet : [thème du webinaire]
+Objectif : aider les participants à passer de la théorie à une pratique claire et reproductible.
 
 Lien : [lien]
 ```

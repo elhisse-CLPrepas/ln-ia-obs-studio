@@ -1,20 +1,20 @@
-# Checklist apres enregistrement
+# Checklist après enregistrement
 
-Utiliser cette checklist juste apres avoir arrete OBS.
+Utiliser cette checklist juste après avoir arrêté OBS.
 
-- [ ] Le fichier video est present dans `recordings/`.
-- [ ] La video s'ouvre correctement.
+- [ ] Le fichier vidéo est présent dans `recordings/`.
+- [ ] La vidéo s’ouvre correctement.
 - [ ] Le son est clair et audible.
-- [ ] L'image est nette.
-- [ ] La capture ecran ou fenetre est lisible.
-- [ ] La webcam est bien cadree.
-- [ ] Le logo LN-IA est visible sans gener le contenu.
-- [ ] Les notifications ou donnees sensibles ne sont pas visibles.
-- [ ] Le fichier est renomme avec une convention claire.
-- [ ] Une copie finale est placee dans `exports/` si la video est validee.
+- [ ] L’image est nette.
+- [ ] La capture écran ou fenêtre est lisible.
+- [ ] La webcam est bien cadrée.
+- [ ] Le logo LN-IA est visible sans gêner le contenu.
+- [ ] Les notifications ou données sensibles ne sont pas visibles.
+- [ ] Le fichier est renommé avec une convention claire.
+- [ ] Une copie finale est placée dans `exports/` si la vidéo est validée.
 
-## Decision rapide
+## Décision rapide
 
-- Si le son est mauvais : refaire l'enregistrement.
-- Si l'image est illisible : corriger la scene OBS puis refaire un test.
-- Si seules quelques secondes sont a couper : garder la video brute et exporter une version finale.
+- Si le son est mauvais : refaire l’enregistrement.
+- Si l’image est illisible : corriger la scène OBS puis refaire un test.
+- Si seules quelques secondes sont à couper : garder la vidéo brute et exporter une version finale.

@@ -1,8 +1,8 @@
 # LN-IA OBS Studio
 
-Ce dossier aide LAB-NUMERIQUE-IA / LN-IA a configurer OBS Studio pour enregistrer des videos pedagogiques sur PC Windows 10 ou Windows 11.
+Ce dossier aide LAB-NUMÉRIQUE-IA / LN-IA à configurer OBS Studio pour enregistrer des vidéos pédagogiques sur PC Windows 10 ou Windows 11.
 
-Il sert de source operationnelle pour un atelier pratique OBS : preparation de la scene, test audio/video, enregistrement, controle qualite et organisation du replay.
+Il sert de source opérationnelle pour un atelier pratique OBS : préparation de la scène, test audio/vidéo, enregistrement, contrôle qualité et organisation du replay.
 
 ## Principe
 
@@ -11,37 +11,37 @@ OBS enregistre.
 VS Code organise.
 Codex structure.
 Git versionne.
-LN-IA transforme la pratique en methode transmissible.
+LN-IA transforme la pratique en méthode transmissible.
 ```
 
-L'objectif est de disposer d'un environnement simple pour produire des formations avec :
+L’objectif est de disposer d’un environnement simple pour produire des formations avec :
 
-- capture d'ecran ou capture de fenetre ;
+- capture d'écran ou capture de fenêtre ;
 - webcam ou photo en direct ;
 - microphone ;
 - logo LN-IA ;
 - habillage visuel sobre ;
-- checklist qualite avant enregistrement ;
+- checklist qualité avant enregistrement ;
 - guide de publication du replay.
 
 ## Utilisation rapide
 
 1. Installer OBS Studio.
 2. Lire `GUIDE-CONFIGURATION-OBS.md`.
-3. Preparer les scenes avec `SCENES-OBS.md`.
-4. Verifier la checklist avant chaque session.
-5. Faire une video test avec `TEST-OBS-LN-IA-V0.1.0.md` et `CHECKLIST-VIDEO-TEST-OBS.md`.
-6. Enregistrer la video avec `GUIDE-ENREGISTRER-VIDEO-PC.md`.
-7. Controler la video avec `CHECKLIST-APRES-ENREGISTREMENT.md`.
+3. Préparer les scènes avec `SCENES-OBS.md`.
+4. Vérifier la checklist avant chaque session.
+5. Faire une vidéo test avec `TEST-OBS-LN-IA-V0.1.0.md` et `CHECKLIST-VIDEO-TEST-OBS.md`.
+6. Enregistrer la vidéo avec `GUIDE-ENREGISTRER-VIDEO-PC.md`.
+7. Contrôler la vidéo avec `CHECKLIST-APRES-ENREGISTREMENT.md`.
 8. Organiser le replay avec `GUIDE-REPLAY.md`.
 
 ## Dossiers importants
 
-- `assets/` : logo, fond d'attente, miniature et elements visuels.
-- `recordings/` : videos brutes enregistrees avec OBS.
-- `exports/` : videos finales pretes a partager.
-- `prompts/` : prompts IA pour preparer les scripts, scenes et descriptions.
-- `templates/` : scripts courts pour l'introduction, la cloture, les messages replay et le test OBS.
+- `assets/` : logo, fond d’attente, miniature et éléments visuels.
+- `recordings/` : vidéos brutes enregistrées avec OBS.
+- `exports/` : vidéos finales prêtes à partager.
+- `prompts/` : prompts IA pour préparer les scripts, scènes et descriptions.
+- `templates/` : scripts courts pour l’introduction, la clôture, les messages replay et le test OBS.
 - `release/` : notes de version du kit.
 
 ## Livrables v0.1.0
@@ -49,11 +49,30 @@ L'objectif est de disposer d'un environnement simple pour produire des formation
 Voir `LIVRABLES-V0.1.0.md` pour suivre :
 
 - dossier VS Code propre ;
-- scene OBS `Ecran + webcam` ;
-- video test `test-obs-ln-ia-v0.1.0.mp4` ;
+- scène OBS `Écran + webcam` ;
+- vidéo test `test-obs-ln-ia-v0.1.0.mp4` ;
 - note de release.
 
-## Preparation automatique
+## Export webinaire
+
+Le fichier `index.html` fournit une page autonome pour présenter le dépôt dans le cadre d’un webinaire ou d’un atelier pédagogique.
+
+Ouvrir directement `index.html` dans un navigateur pour afficher :
+
+- l’objectif de l’atelier ;
+- les 4 scènes OBS ;
+- la vidéo test attendue ;
+- les fichiers utiles du dépôt ;
+- le principe LN-IA.
+
+## Catalogue OBS LN-IA
+
+Deux versions du catalogue rapide sont disponibles :
+
+- `catalogue-obs-ln-ia.docx` : version Word pour impression, partage ou adaptation ;
+- `catalogue-obs-ln-ia.html` : version web autonome pour consultation dans un navigateur.
+
+## Préparation automatique
 
 Depuis PowerShell :
 
@@ -61,4 +80,4 @@ Depuis PowerShell :
 .\scripts\check_media_folder.ps1
 ```
 
-Le script cree les dossiers media necessaires si besoin.
+Le script crée les dossiers médias nécessaires si besoin.
